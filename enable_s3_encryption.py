@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 
+import argparse
 import boto3
 from botocore.exceptions import ClientError
 
-session = boto3.session.Session(profile_name='AWS_PROFILE_NAME')
+parser = argparse.ArgumentParser(description='Check all S3 buckets in the AWS account and enables default encryption with AES256')
+parser.add_argument('account', type=str, help='Named AWS user account')
+
+args = parser.parse_args()
+
+session = boto3.session.Session(profile_name=args.account)
 s3 = session.client(service_name='s3')
 
 enc_config = {

@@ -20,19 +20,11 @@ AWS named profile and credentials should be configured - [Read more](https://doc
 git clone git@github.com:thilinajayanath/check-s3-server-side-encryption.git
 ```
 
-## Configuration
-
-Replace the **AWS_PROFILE_NAME** in the following line with name of your profile for AWS credentials.
-
-```
-session = boto3.session.Session(profile_name='AWS_PROFILE_NAME')
-```
-
 ## Run the application
 
 ```
 chmod u+x enable_s3_encryption.py
-./enable_s3_encryption.py
+./enable_s3_encryption.py **AWS_PROFILE_NAME**
 ```
 
 ## License
