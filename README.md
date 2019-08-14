@@ -41,7 +41,7 @@ git clone git@github.com:thilinajayanath/check-s3-server-side-encryption.git
 ## Run the application
 
 ```
-chmod u+x enable_s3_encryption.py
+chmod u+x enable-s3-encryption.py
 /path/to/new/virtual/environment/bin/python enable-s3-encryption.py <AWS-PROFILE-NAME>
 ```
 
