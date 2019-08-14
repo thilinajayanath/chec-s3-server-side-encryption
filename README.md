@@ -4,11 +4,29 @@ Simple script written in Python 3 that will check a given AWS account for the st
 
 ## Prerequisites
 
-These Python packages should be installed
+```
+boto3
+botocore
+```
+
+It is recommended to use a Python 3 virtual environment to install the above libraries [Read more](https://docs.python.org/3/library/venv.html)
+Required libraries can be installed with the requirements.txt file to the virtual environment[Read more](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
 
 ```
-boto3 - pip3 install boto3
-botocore - pip3 install botocore
+python3 -m venv /path/to/new/virtual/environment
+/path/to/new/virtual/environment/bin/pip install -r requirements.txt
+```
+```
+boto3
+botocore
+```
+
+It is recommended to use a Python 3 virtual environment to install the above libraries [Read more](https://docs.python.org/3/library/venv.html)
+Required libraries can be installed with the requirements.txt file to the virtual environment[Read more](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
+
+```
+python3 -m venv /path/to/new/virtual/environment
+/path/to/new/virtual/environment/bin/pip install -r requirements.txt
 ```
 
 AWS named profile and credentials should be configured - [Read more](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
