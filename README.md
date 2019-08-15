@@ -1,4 +1,4 @@
-# check-s3-server-side-encryption
+# s3-server-side-encryption
 
 Simple script written in Python 3 that will check a given AWS account for the status of the default server-side encryption for all the S3 buckets and enable default server-side encryption with AES256 for S3 buckets with no current server-side encryption configuration.
 
